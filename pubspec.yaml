@@ -19,7 +19,7 @@ publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 version: 3.8.1+31
 
 environment:
-  sdk: '>=3.0.0 <4.0.0'
+  sdk: '>=3.5.0 <4.0.0'
 
 # Dependencies specify other packages that your package needs in order to work.
 # To automatically upgrade your package dependencies to the latest versions
@@ -111,7 +111,7 @@ dependencies:
 dependency_overrides:
   wechat_assets_picker: ^8.9.0-dev.1
   photo_manager: ^3.0.0-dev.2
-  flutter_openim_sdk: 3.8.1+1
+  flutter_openim_sdk: 3.8.1
 
 dev_dependencies:
   flutter_test:

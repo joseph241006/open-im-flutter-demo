@@ -112,7 +112,7 @@ PODS:
   - GTCommonSDK (3.1.5.0):
     - ZXSDK
   - GTMSessionFetcher/Core (2.3.0)
-  - GTSDK (3.0.6.2):
+  - GTSDK (3.0.7.0):
     - GTCommonSDK (> 3.0.9.0)
   - image_cropper (0.0.4):
     - Flutter
@@ -410,7 +410,7 @@ SPEC CHECKSUMS:
   GoogleUtilitiesComponents: 679b2c881db3b615a2777504623df6122dd20afe
   GTCommonSDK: 02831526860276875f9fc582d15905b7c4d937ae
   GTMSessionFetcher: 3a63d75eecd6aa32c2fc79f578064e1214dfdec2
-  GTSDK: eda61918dbb9f3ccb0f175af252771154db8dc63
+  GTSDK: eaf9a2200faeff205cec9a927e840db769a00eaa
   image_cropper: a3291c624a953049bc6a02e1f8c8ceb162a24b25
   image_gallery_saver: cb43cc43141711190510e92c460eb1655cd343cb
   image_picker_ios: c560581cceedb403a6ff17f2f816d7fea1421fc1

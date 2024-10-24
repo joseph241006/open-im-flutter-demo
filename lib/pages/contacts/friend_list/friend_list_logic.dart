@@ -57,7 +57,7 @@ class FriendListLogic extends GetxController {
       }
       _offset += temp.length;
       _count = 1000;
-      list.addAll(temp as Iterable<PublicUserInfo>);
+      list.addAll(temp);
     }
 
     final result = list.map((e) {

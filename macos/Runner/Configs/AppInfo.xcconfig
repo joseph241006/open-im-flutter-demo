@@ -8,7 +8,7 @@
 PRODUCT_NAME = openim
 
 // The application's bundle identifier
-PRODUCT_BUNDLE_IDENTIFIER = com.myfly.openim.openim
+PRODUCT_BUNDLE_IDENTIFIER = com.myfly.flutter.openim
 
 // The copyright displayed in application information
-PRODUCT_COPYRIGHT = Copyright © 2024 com.myfly.openim. All rights reserved.
+PRODUCT_COPYRIGHT = Copyright © 2024 com.myfly.flutter. All rights reserved.
