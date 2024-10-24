@@ -1,7 +1,7 @@
 #!/bin/sh
 # This is a generated file; do not edit or check into version control.
 export "FLUTTER_ROOT=/Users/joseph/fluttersdk/flutter"
-export "FLUTTER_APPLICATION_PATH=/Users/joseph/Documents/GitHub/open-im-flutter-demo"
+export "FLUTTER_APPLICATION_PATH=/Users/joseph/Documents/GitHub/openim"
 export "COCOAPODS_PARALLEL_CODE_SIGN=true"
 export "FLUTTER_BUILD_DIR=build"
 export "FLUTTER_BUILD_NAME=3.8.1"
