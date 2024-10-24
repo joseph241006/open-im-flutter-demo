@@ -9,14 +9,14 @@ enum BubbleType {
 
 class ChatBubble extends StatelessWidget {
   const ChatBubble({
-    super.key,
+    Key? key,
     this.margin,
     this.constraints,
     this.alignment = Alignment.center,
     this.backgroundColor,
     this.child,
     required this.bubbleType,
-  });
+  }) : super(key: key);
   final EdgeInsetsGeometry? margin;
   final BoxConstraints? constraints;
   final AlignmentGeometry? alignment;

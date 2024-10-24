@@ -21,7 +21,7 @@ class MatchTextView extends StatelessWidget {
   final Function(String? text)? onVisibleTrulyText;
 
   const MatchTextView({
-    super.key,
+    Key? key,
     required this.text,
     this.allAtMap = const <String, String>{},
     this.prefixSpan,
@@ -34,7 +34,7 @@ class MatchTextView extends StatelessWidget {
     this.textScaleFactor = 1.0,
     this.model = TextModel.match,
     this.onVisibleTrulyText,
-  });
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -57,7 +57,8 @@ class MatchTextView extends StatelessWidget {
         textAlign: textAlign,
         overflow: overflow,
         maxLines: maxLines,
-        text: textSpan, textScaler: TextScaler.linear(textScaleFactor),
+        textScaleFactor: textScaleFactor,
+        text: textSpan,
       ),
     );
   }

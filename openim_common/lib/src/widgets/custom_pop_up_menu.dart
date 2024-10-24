@@ -36,7 +36,7 @@ Rect _menuRect = Rect.zero;
 
 class CopyCustomPopupMenu extends StatefulWidget {
   const CopyCustomPopupMenu({
-    super.key,
+    Key? key,
     required this.child,
     required this.menuBuilder,
     required this.pressType,
@@ -50,7 +50,7 @@ class CopyCustomPopupMenu extends StatefulWidget {
     this.position,
     this.menuOnChange,
     this.enablePassEvent = true,
-  });
+  }) : super(key: key);
 
   final Widget child;
   final PressType pressType;
@@ -330,8 +330,8 @@ class _MenuLayoutDelegate extends MultiChildLayoutDelegate {
     }
 
     double minTopMargin = contentSize.height + arrowSize.height;
-    if (anchorTopY < minTopMargin) {
-      if (touchY! < minTopMargin) {
+    if (null != touchY && anchorTopY < minTopMargin) {
+      if (touchY < minTopMargin) {
         isTop = false;
         if (anchorSize.height > size.height * 0.8) {
           anchorBottomY = touchY;

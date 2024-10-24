@@ -4,10 +4,10 @@ import 'package:openim_common/openim_common.dart';
 
 class BottomBar extends StatelessWidget {
   const BottomBar({
-    super.key,
+    Key? key,
     this.index = 0,
     required this.items,
-  });
+  }) : super(key: key);
   final int index;
   final List<BottomBarItem> items;
 

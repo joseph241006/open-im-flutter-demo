@@ -6,10 +6,10 @@ import 'package:syncfusion_flutter_sliders/sliders.dart';
 
 class FontSizeSlider extends StatelessWidget {
   const FontSizeSlider({
-    super.key,
+    Key? key,
     required this.value,
     this.onChanged,
-  });
+  }) : super(key: key);
   final double value;
   final Function(dynamic value)? onChanged;
 

@@ -6,14 +6,14 @@ import 'package:openim_common/openim_common.dart';
 
 class ChatToolBox extends StatelessWidget {
   const ChatToolBox({
-    super.key,
+    Key? key,
     this.onTapAlbum,
     this.onTapCall,
     this.onTapCamera,
     this.onTapCard,
     this.onTapFile,
     this.onTapLocation,
-  });
+  }) : super(key: key);
   final Function()? onTapAlbum;
   final Function()? onTapCamera;
   final Function()? onTapCall;

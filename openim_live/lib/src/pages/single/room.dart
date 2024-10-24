@@ -76,14 +76,14 @@ class _SingleRoomViewState extends SignalState<SingleRoomView> {
       // Try to connect to the room
       // This will throw an Exception if it fails for any reason.
       await _room?.connect(url, token,
-          roomOptions: const RoomOptions(
+          roomOptions: RoomOptions(
               dynacast: true,
               adaptiveStream: true,
-              defaultCameraCaptureOptions: CameraCaptureOptions(params: VideoParametersPresets.h720_169),
+              defaultCameraCaptureOptions: const CameraCaptureOptions(params: VideoParametersPresets.h720_169),
               defaultVideoPublishOptions: VideoPublishOptions(
                   simulcast: true,
                   videoCodec: 'VP9',
-                  videoEncoding: VideoEncoding(
+                  videoEncoding: const VideoEncoding(
                     maxBitrate: 5 * 1000 * 1000,
                     maxFramerate: 15,
                   ))));

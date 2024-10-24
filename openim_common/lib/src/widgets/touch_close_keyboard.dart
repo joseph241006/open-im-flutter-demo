@@ -7,11 +7,11 @@ class TouchCloseSoftKeyboard extends StatelessWidget {
   final bool isGradientBg;
 
   const TouchCloseSoftKeyboard({
-    super.key,
+    Key? key,
     required this.child,
     this.onTouch,
     this.isGradientBg = false,
-  });
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

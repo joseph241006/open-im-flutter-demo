@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 class TransparentRoute extends PageRoute {
   TransparentRoute({
     required this.builder,
-    super.settings,
-  }) : super(fullscreenDialog: false);
+    RouteSettings? settings,
+  }) : super(settings: settings, fullscreenDialog: false);
 
   final WidgetBuilder builder;
 
@@ -40,16 +40,24 @@ class TransparentRoute extends PageRoute {
 
 class TransparentPageRoute<T> extends PageRouteBuilder<T> {
   TransparentPageRoute({
-    super.settings,
-    required super.pageBuilder,
-    super.transitionsBuilder = _defaultTransitionsBuilder,
-    super.transitionDuration = const Duration(milliseconds: 150),
-    super.barrierDismissible,
-    super.barrierColor,
-    super.barrierLabel,
-    super.maintainState,
+    RouteSettings? settings,
+    required RoutePageBuilder pageBuilder,
+    RouteTransitionsBuilder transitionsBuilder = _defaultTransitionsBuilder,
+    Duration transitionDuration = const Duration(milliseconds: 150),
+    bool barrierDismissible = false,
+    Color? barrierColor,
+    String? barrierLabel,
+    bool maintainState = true,
   }) : super(
+          settings: settings,
           opaque: false,
+          pageBuilder: pageBuilder,
+          transitionsBuilder: transitionsBuilder,
+          transitionDuration: transitionDuration,
+          barrierDismissible: barrierDismissible,
+          barrierColor: barrierColor,
+          barrierLabel: barrierLabel,
+          maintainState: maintainState,
         );
 }
 

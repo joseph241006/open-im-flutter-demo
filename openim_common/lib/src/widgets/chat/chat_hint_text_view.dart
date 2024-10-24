@@ -7,9 +7,9 @@ import 'package:sprintf/sprintf.dart';
 
 class ChatHintTextView extends StatelessWidget {
   const ChatHintTextView({
-    super.key,
+    Key? key,
     required this.message,
-  });
+  }) : super(key: key);
   final Message message;
 
   @override

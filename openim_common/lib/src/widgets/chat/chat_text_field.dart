@@ -18,7 +18,7 @@ class ChatTextField extends StatelessWidget {
   final TextAlign textAlign;
 
   const ChatTextField({
-    super.key,
+    Key? key,
     this.allAtMap = const {},
     this.atCallback,
     this.focusNode,
@@ -29,7 +29,7 @@ class ChatTextField extends StatelessWidget {
     this.inputFormatters,
     this.enabled = true,
     this.textAlign = TextAlign.start,
-  });
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

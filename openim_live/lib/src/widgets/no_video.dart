@@ -8,7 +8,7 @@ import 'package:openim_live/src/utils/live_utils.dart';
 
 class NoVideoWidget extends StatelessWidget {
   //
-  const NoVideoWidget({super.key});
+  const NoVideoWidget({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) => Container(
@@ -25,7 +25,7 @@ class NoVideoWidget extends StatelessWidget {
 
 class NoVideoAvatarWidget extends StatelessWidget {
   //
-  const NoVideoAvatarWidget({super.key, this.faceURL, this.name});
+  const NoVideoAvatarWidget({Key? key, this.faceURL, this.name}) : super(key: key);
   final String? faceURL;
   final String? name;
   //

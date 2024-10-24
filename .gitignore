@@ -1,7 +1,7 @@
 .flutter-plugins
 .flutter-plugins-dependencies
 /.packages
-.dart_tool/
+/.dart_tool/
 /build
 .DS_Store
 .idea

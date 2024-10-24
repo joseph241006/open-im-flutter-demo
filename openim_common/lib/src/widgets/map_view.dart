@@ -8,12 +8,12 @@ import 'package:openim_common/openim_common.dart';
 
 class MapView extends StatelessWidget {
   const MapView({
-    super.key,
+    Key? key,
     required this.latitude,
     required this.longitude,
     required this.address1,
     required this.address2,
-  });
+  }) : super(key: key);
   final double latitude;
   final double longitude;
   final String address1;

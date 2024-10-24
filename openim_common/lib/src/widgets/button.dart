@@ -4,7 +4,7 @@ import 'package:openim_common/openim_common.dart';
 
 class Button extends StatelessWidget {
   const Button({
-    super.key,
+    Key? key,
     required this.text,
     this.enabled = true,
     this.enabledColor,
@@ -16,7 +16,7 @@ class Button extends StatelessWidget {
     this.height,
     this.margin,
     this.padding,
-  });
+  }) : super(key: key);
   final Color? enabledColor;
   final Color? disabledColor;
   final double? radius;
@@ -64,14 +64,14 @@ class Button extends StatelessWidget {
 
 class ImageTextButton extends StatelessWidget {
   const ImageTextButton({
-    super.key,
+    Key? key,
     required this.icon,
     required this.text,
     this.textStyle,
     this.color,
     this.height,
     this.onTap,
-  });
+  }) : super(key: key);
   final String icon;
   final String text;
   final TextStyle? textStyle;

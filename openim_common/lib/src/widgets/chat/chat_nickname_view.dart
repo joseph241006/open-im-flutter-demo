@@ -4,10 +4,10 @@ import 'package:openim_common/openim_common.dart';
 
 class ChatNicknameView extends StatelessWidget {
   const ChatNicknameView({
-    super.key,
+    Key? key,
     this.nickname,
     this.timeStr,
-  });
+  }) : super(key: key);
   final String? nickname;
   final String? timeStr;
 

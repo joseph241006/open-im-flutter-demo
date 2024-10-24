@@ -87,7 +87,7 @@ class LoginLogic extends GetxController {
 
   void openCountryCodePicker() async {
     String? code = await IMViews.showCountryCodePicker();
-    areaCode.value = code!;
+    if (null != code) areaCode.value = code;
   }
 
   void configService() => Get.to(

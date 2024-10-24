@@ -43,6 +43,7 @@ class AccountSetupPage extends StatelessWidget {
   Widget _buildItemView({
     required String label,
     TextStyle? textStyle,
+    String? value,
     bool switchOn = false,
     bool isTopRadius = false,
     bool isBottomRadius = false,

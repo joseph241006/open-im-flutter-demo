@@ -263,7 +263,6 @@ class ConversationLogic extends GetxController {
       case IMSdkStatus.syncEnded:
         return null;
     }
-    return null;
   }
 
   bool get isFailedSdkStatus => imStatus.value == IMSdkStatus.connectionFailed || imStatus.value == IMSdkStatus.syncFailed;
@@ -332,7 +331,7 @@ class ConversationLogic extends GetxController {
     }
 
     if (start > list.length - 1) return;
-    final unreadItem = list.sublist(start).firstWhereOrNull((e) => e.unreadCount > 0);
+    final unreadItem = list.sublist(start).firstWhereOrNull((e) => e.unreadCount! > 0);
     if (null == unreadItem) {
       if (start > 0) {
         scrollController.scrollToIndex(

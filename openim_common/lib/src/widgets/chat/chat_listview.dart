@@ -87,7 +87,7 @@ typedef CustomChatListViewItemBuilder<T> = Widget Function(
 
 class CustomChatListView extends StatefulWidget {
   const CustomChatListView({
-    super.key,
+    Key? key,
     required this.itemBuilder,
     required this.controller,
     this.scrollController,
@@ -96,7 +96,7 @@ class CustomChatListView extends StatefulWidget {
     this.enabledBottomLoad = false,
     this.enabledTopLoad = false,
     this.indicatorColor,
-  });
+  }) : super(key: key);
 
   final CustomChatListViewItemBuilder itemBuilder;
 
@@ -234,7 +234,7 @@ class _CustomChatListViewState extends State<CustomChatListView> {
 
 class ChatListView extends StatefulWidget {
   const ChatListView({
-    super.key,
+    Key? key,
     this.physics,
     this.onTouch,
     this.itemCount,
@@ -245,7 +245,7 @@ class ChatListView extends StatefulWidget {
     this.onScrollToTopLoad,
     this.onScrollToBottom,
     this.onScrollToTop,
-  });
+  }) : super(key: key);
   final ScrollController? controller;
   final ScrollPhysics? physics;
   final int? itemCount;

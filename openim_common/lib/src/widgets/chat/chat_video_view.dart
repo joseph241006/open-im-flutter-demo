@@ -7,11 +7,11 @@ import 'package:openim_common/openim_common.dart';
 
 class ChatVideoView extends StatefulWidget {
   const ChatVideoView({
-    super.key,
+    Key? key,
     required this.message,
     required this.isISend,
     this.sendProgressStream,
-  });
+  }) : super(key: key);
   final bool isISend;
   final Stream<MsgStreamEv<int>>? sendProgressStream;
   final Message message;

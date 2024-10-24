@@ -4,7 +4,7 @@ import 'package:openim_common/openim_common.dart';
 
 class ChatItemContainer extends StatelessWidget {
   const ChatItemContainer({
-    super.key,
+    Key? key,
     required this.id,
     this.leftFaceUrl,
     this.rightFaceUrl,
@@ -26,7 +26,7 @@ class ChatItemContainer extends StatelessWidget {
     this.onLongPressLeftAvatar,
     this.onLongPressRightAvatar,
     this.onFailedToResend,
-  });
+  }) : super(key: key);
   final String id;
   final String? leftFaceUrl;
   final String? rightFaceUrl;

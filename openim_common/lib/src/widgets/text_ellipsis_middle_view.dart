@@ -9,11 +9,12 @@ class TextWithMidEllipsis extends StatelessWidget {
 
   const TextWithMidEllipsis(
     this.data, {
-    super.key,
+    Key? key,
     this.textAlign,
     this.style = const TextStyle(),
     this.endPartLength = 10,
-  })  : textDirection = TextDirection.ltr;
+  })  : textDirection = TextDirection.ltr,
+        super(key: key);
 
   @override
   Widget build(BuildContext context) {
