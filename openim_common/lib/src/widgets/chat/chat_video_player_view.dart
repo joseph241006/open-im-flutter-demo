@@ -49,7 +49,7 @@ class CachedVideoControllerService extends VideoControllerService {
 
 class ChatVideoPlayerView extends StatefulWidget {
   const ChatVideoPlayerView({
-    Key? key,
+    super.key,
     this.path,
     this.url,
     this.coverUrl,
@@ -58,7 +58,7 @@ class ChatVideoPlayerView extends StatefulWidget {
     this.oDownload,
     this.autoPlay = true,
     this.muted = false,
-  }) : super(key: key);
+  });
   final String? path;
   final String? url;
   final File? file;

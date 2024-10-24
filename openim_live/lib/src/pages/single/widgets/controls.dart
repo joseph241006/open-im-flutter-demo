@@ -21,10 +21,9 @@ import 'package:openim_common/openim_common.dart';
 import 'package:openim_live/src/widgets/live_button.dart';
 import 'package:synchronized/synchronized.dart';
 
-import '../../../live_client.dart';
 class ControlsView extends StatefulWidget {
   const ControlsView({
-    Key? key,
+    super.key,
     this.initState = CallState.call,
     this.callType = CallType.video,
     required this.callStateStream,
@@ -39,7 +38,7 @@ class ControlsView extends StatefulWidget {
     this.onPickUp,
     this.onReject,
     this.onChangedCallState,
-  }) : super(key: key);
+  });
   final Stream<Room> roomDidUpdateStream;
   final Stream<CallState> callStateStream;
   final CallState initState;

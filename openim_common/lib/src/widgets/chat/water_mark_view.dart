@@ -6,7 +6,7 @@ import 'package:openim_common/openim_common.dart';
 
 class WaterMarkBgView extends StatelessWidget {
   const WaterMarkBgView({
-    Key? key,
+    super.key,
     this.path,
     this.text = '',
     this.newMessageCount = 0,
@@ -17,7 +17,7 @@ class WaterMarkBgView extends StatelessWidget {
     this.bottomView,
     this.floatView,
     this.onSeeNewMessage,
-  }) : super(key: key);
+  });
   final String? path;
   final String text;
   final int newMessageCount;

@@ -345,7 +345,6 @@ mixin OpenIMLive {
   void _recordCall({
     required CallState state,
     required SignalingInfo signaling,
-    int duration = 0,
   }) async {}
 }
 

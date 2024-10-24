@@ -30,8 +30,8 @@ abstract class ParticipantWidget extends StatefulWidget {
 
   const ParticipantWidget({
     this.quality = VideoQuality.MEDIUM,
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
 }
 
 class LocalParticipantWidget extends ParticipantWidget {
@@ -46,8 +46,8 @@ class LocalParticipantWidget extends ParticipantWidget {
     this.participant,
     this.videoTrack,
     this.isScreenShare, {
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
 
   @override
   State<StatefulWidget> createState() => _LocalParticipantWidgetState();
@@ -65,8 +65,8 @@ class RemoteParticipantWidget extends ParticipantWidget {
     this.participant,
     this.videoTrack,
     this.isScreenShare, {
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
 
   @override
   State<StatefulWidget> createState() => _RemoteParticipantWidgetState();

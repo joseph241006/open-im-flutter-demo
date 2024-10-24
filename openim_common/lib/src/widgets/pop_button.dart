@@ -46,7 +46,7 @@ class PopButton extends StatelessWidget {
   final double? lineWidth;
 
   const PopButton({
-    Key? key,
+    super.key,
     required this.menus,
     required this.child,
     this.popCtrl,
@@ -71,7 +71,7 @@ class PopButton extends StatelessWidget {
     this.menuItemPadding,
     this.lineColor,
     this.lineWidth = 1.0,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {

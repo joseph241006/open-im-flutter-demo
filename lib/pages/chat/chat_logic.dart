@@ -365,8 +365,8 @@ class ChatLogic extends GetxController {
     userId = IMUtils.emptyStrToNull(userId);
     groupId = IMUtils.emptyStrToNull(groupId);
     if (null == userId && null == groupId ||
-        userId == userID && userId != null ||
-        groupId == groupID && groupId != null) {
+        userId == userID ||
+        groupId == groupID) {
       if (addToUI) {
         messageList.add(message);
         scrollBottom();
@@ -741,12 +741,10 @@ class ChatLogic extends GetxController {
 
   String get markText {
     String? phoneNumber = imLogic.userInfo.value.phoneNumber;
-    if (phoneNumber != null) {
-      int start = phoneNumber.length > 4 ? phoneNumber.length - 4 : 0;
-      final sub = phoneNumber.substring(start);
-      return "${OpenIM.iMManager.userInfo.nickname!}$sub";
-    }
-    return OpenIM.iMManager.userInfo.nickname ?? '';
+    int start = phoneNumber!.length > 4 ? phoneNumber.length - 4 : 0;
+    final sub = phoneNumber.substring(start);
+    return "${OpenIM.iMManager.userInfo.nickname!}$sub";
+      return OpenIM.iMManager.userInfo.nickname ?? '';
   }
 
   bool isFailedHintMessage(Message message) {

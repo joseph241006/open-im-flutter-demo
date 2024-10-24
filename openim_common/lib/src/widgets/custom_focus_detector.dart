@@ -10,8 +10,8 @@ class FocusDetector extends StatefulWidget {
     this.onVisibilityLost,
     this.onForegroundGained,
     this.onForegroundLost,
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
 
   final VoidCallback? onFocusGained;
 

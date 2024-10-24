@@ -16,7 +16,7 @@ import 'participant.dart';
 
 abstract class SignalView extends StatefulWidget {
   const SignalView({
-    Key? key,
+    super.key,
     required this.callType,
     required this.initState,
     this.roomID,
@@ -36,7 +36,7 @@ abstract class SignalView extends StatefulWidget {
     this.onStartCalling,
     this.onError,
     this.onRoomDisconnected,
-  }) : super(key: key);
+  });
   final CallType callType;
   final CallState initState;
   final String? roomID;

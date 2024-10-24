@@ -5,14 +5,14 @@ import 'package:openim_common/openim_common.dart';
 
 class BottomSheetView extends StatelessWidget {
   const BottomSheetView({
-    Key? key,
+    super.key,
     required this.items,
     this.itemHeight,
     this.textStyle,
     this.mainAxisAlignment,
     this.isOverlaySheet = false,
     this.onCancel,
-  }) : super(key: key);
+  });
   final List<SheetItem> items;
   final double? itemHeight;
   final TextStyle? textStyle;

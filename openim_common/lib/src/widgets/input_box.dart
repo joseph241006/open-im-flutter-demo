@@ -104,7 +104,7 @@ class InputBox extends StatefulWidget {
         clearBtnColor = null;
 
   const InputBox({
-    Key? key,
+    super.key,
     required this.label,
     this.controller,
     this.focusNode,
@@ -124,7 +124,7 @@ class InputBox extends StatefulWidget {
     this.onSendVerificationCode,
     this.margin,
     this.inputFormatters,
-  }) : super(key: key);
+  });
   final TextStyle? labelStyle;
   final TextStyle? textStyle;
   final TextStyle? hintStyle;
@@ -323,10 +323,10 @@ class VerifyCodedButton extends StatefulWidget {
   final Future<bool> Function()? onTapCallback;
 
   const VerifyCodedButton({
-    Key? key,
+    super.key,
     this.seconds = 300,
     required this.onTapCallback,
-  }) : super(key: key);
+  });
 
   @override
   State<VerifyCodedButton> createState() => _VerifyCodedButtonState();

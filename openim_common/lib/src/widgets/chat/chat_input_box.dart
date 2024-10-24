@@ -10,7 +10,7 @@ double kInputBoxMinHeight = 56.h;
 
 class ChatInputBox extends StatefulWidget {
   const ChatInputBox({
-    Key? key,
+    super.key,
     required this.toolbox,
     this.allAtMap = const {},
     this.atCallback,
@@ -24,7 +24,7 @@ class ChatInputBox extends StatefulWidget {
     this.isNotInGroup = false,
     this.hintText,
     this.onSend,
-  }) : super(key: key);
+  });
   final AtTextCallback? atCallback;
   final Map<String, String> allAtMap;
   final FocusNode? focusNode;
@@ -220,10 +220,9 @@ class _ChatInputBoxState extends State<ChatInputBox> {
 
 class _QuoteView extends StatelessWidget {
   const _QuoteView({
-    Key? key,
-    this.onClearQuote,
-    required this.content,
-  }) : super(key: key);
+    super.key,
+    required this.content, this.onClearQuote,
+  });
   final Function()? onClearQuote;
   final String content;
 

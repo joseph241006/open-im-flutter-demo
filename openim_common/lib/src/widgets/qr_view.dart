@@ -12,7 +12,7 @@ import 'package:url_launcher/url_launcher.dart';
 import 'qr_scan_box.dart';
 
 class QrcodeView extends StatefulWidget {
-  const QrcodeView({Key? key}) : super(key: key);
+  const QrcodeView({super.key});
 
   @override
   State<QrcodeView> createState() => _QrcodeViewState();
@@ -135,7 +135,7 @@ class _QrcodeViewState extends State<QrcodeView> with TickerProviderStateMixin {
                     child: ValueListenableBuilder(
                       valueListenable: controller.torchState,
                       builder: (context, state, child) {
-                        switch (state as TorchState) {
+                        switch (state) {
                           case TorchState.off:
                             return flashClose;
                           case TorchState.on:

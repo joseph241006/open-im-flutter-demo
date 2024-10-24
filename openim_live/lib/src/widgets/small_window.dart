@@ -7,7 +7,7 @@ import '../../openim_live.dart';
 
 class SmallWindowView extends StatelessWidget {
   const SmallWindowView({
-    Key? key,
+    super.key,
     this.userInfo,
     this.groupInfo,
     required this.callState,
@@ -15,7 +15,7 @@ class SmallWindowView extends StatelessWidget {
     this.onTapMaximize,
     this.child,
     this.onPanUpdate,
-  }) : super(key: key);
+  });
   final CallState callState;
   final UserInfo? userInfo;
   final GroupInfo? groupInfo;

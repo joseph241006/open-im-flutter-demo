@@ -4,11 +4,11 @@ import 'package:openim_common/openim_common.dart';
 
 class LiveButton extends StatelessWidget {
   const LiveButton({
-    Key? key,
+    super.key,
     required this.text,
     required this.icon,
     this.onTap,
-  }) : super(key: key);
+  });
   final String text;
   final String icon;
   final Function()? onTap;

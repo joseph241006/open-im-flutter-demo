@@ -19,8 +19,8 @@ import 'package:video_player/video_player.dart';
 class CustomMaterialControls extends StatefulWidget {
   const CustomMaterialControls({
     this.showPlayButton = true,
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
 
   final bool showPlayButton;
 
@@ -622,7 +622,7 @@ class _MaterialControlsState extends State<CustomMaterialControls>
               playedColor: Theme.of(context).colorScheme.secondary,
               handleColor: Theme.of(context).colorScheme.secondary,
               bufferedColor:
-                  Theme.of(context).colorScheme.background.withOpacity(0.5),
+                  Theme.of(context).colorScheme.surface.withOpacity(0.5),
               backgroundColor: Theme.of(context).disabledColor.withOpacity(.5),
             ),
       ),

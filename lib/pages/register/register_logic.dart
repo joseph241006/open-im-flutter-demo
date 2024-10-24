@@ -41,7 +41,7 @@ class RegisterLogic extends GetxController {
 
   void openCountryCodePicker() async {
     String? code = await IMViews.showCountryCodePicker();
-    if (null != code) areaCode.value = code;
+    areaCode.value = code!;
   }
 
   Future<bool> requestVerificationCode() => Apis.requestVerificationCode(

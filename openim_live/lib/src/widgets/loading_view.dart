@@ -5,11 +5,11 @@ import 'package:openim_common/openim_common.dart';
 
 class LiveLoadingView extends StatelessWidget {
   const LiveLoadingView({
-    Key? key,
+    super.key,
     this.assetsName = 'assets/anim/live_loading.json',
     this.package = 'openim_common',
     this.status = false,
-  }) : super(key: key);
+  });
   final bool status;
   final String assetsName;
   final String? package;
