@@ -9,7 +9,7 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+  const MyApp({Key? key});
 
   @override
   Widget build(BuildContext context) {
@@ -24,7 +24,7 @@ class MyApp extends StatelessWidget {
 }
 
 class MyHomePage extends StatefulWidget {
-  const MyHomePage({super.key, required this.title});
+  const MyHomePage({Key? key, required this.title});
 
   final String title;
 
@@ -253,7 +253,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         return Container(
                           margin: const EdgeInsets.symmetric(vertical: 4),
                           child: LinearProgressIndicator(
-                            value: value,
+                            value: value as double,
                           ),
                         );
                       }),
@@ -394,7 +394,7 @@ class ListItem extends StatelessWidget {
                     return Container(
                       margin: const EdgeInsets.symmetric(vertical: 4),
                       child: LinearProgressIndicator(
-                        value: value,
+                        value: value as double,
                         color:
                             downloadTask!.status.value == DownloadStatus.paused
                                 ? Colors.grey
