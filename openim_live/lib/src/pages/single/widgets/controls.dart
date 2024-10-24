@@ -12,14 +12,7 @@ import 'package:synchronized/synchronized.dart';
 import '../../../live_client.dart';
 import '../../../widgets/loading_view.dart';
 
-import 'package:collection/collection.dart';
-import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_webrtc/flutter_webrtc.dart';
-import 'package:livekit_client/livekit_client.dart';
-import 'package:openim_common/openim_common.dart';
-import 'package:openim_live/src/widgets/live_button.dart';
-import 'package:synchronized/synchronized.dart';
 
 class ControlsView extends StatefulWidget {
   const ControlsView({

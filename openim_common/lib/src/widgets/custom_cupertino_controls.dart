@@ -798,7 +798,6 @@ class _CustomCupertinoControlsState extends State<CustomCupertinoControls> with 
 
 class _PlaybackSpeedDialog extends StatelessWidget {
   const _PlaybackSpeedDialog({
-    super.key,
     required List<double> speeds,
     required double selected,
   })  : _speeds = speeds,

@@ -220,7 +220,6 @@ class _ChatInputBoxState extends State<ChatInputBox> {
 
 class _QuoteView extends StatelessWidget {
   const _QuoteView({
-    super.key,
     required this.content, this.onClearQuote,
   });
   final Function()? onClearQuote;
